@@ -32,3 +32,5 @@ Fiz um formulario simples e passei todos os dados cadastrados para o JavaScript 
 Pequei os dados no JavaScript e joguei dentro de um array e mostrei na tela com o innerHTML
 
 Depois exclui um dos dados com o splice
+
+Para ver o projeto [clique agui](https://felipeferreirass.github.io/Processo-Seletivo-Helpper/)
