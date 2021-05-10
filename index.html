@@ -7,82 +7,95 @@
   <title>Processo Seletivo Helpper</title>
 </head>
 <body>
-  <form>
-    <fieldset>
-      <div>
-        <label for="Nome"><strong>Nome</strong></label>
-        <input type="text" name="nome" id="nome" required>
-      </div>
-      <div>
-        <label for="E-mail"><strong>E-mail</strong></label>
-        <input type="email" name="email" id="email" required>
-      </div>
-      <div>
-        <label for="CPF ou CNPJ"><strong>CPF ou CNPJ</strong></label>
-        <input type="number" name="cpf" id="cpf" required>
-      </div>
-      <div>
-        <label for="Telefone"><strong>Telefone</strong></label>
-        <input type="tel" name="telefone" id="telefone" required>
-      </div>
-    </fieldset>
+  <section class="main">
+    <div class="cabesalho">
+      <h1>Processo Seletivo Helpper - Programa de Estágio</h1>
+      <h2>Teste prático</h2>
+      <p>Complete o formulário</p>
+    </div>
 
-    <fieldset>
+    <section class="formulario">
       <div>
-        <label for="CEP"><strong>CEP</strong></label>
-        <input type="number" name="cep" id="cep" required>
+        <div>
+          <label for="Nome"><strong>Nome: </strong></label>
+          <input type="text" name="nome" id="nome" required>
+        </div>
+        <div>
+          <label for="E-mail"><strong>E-mail: </strong></label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="CPF ou CNPJ"><strong>CPF ou CNPJ: </strong></label>
+          <input type="number" name="cpf" id="cpfCnpj" required>
+        </div>
+        <div>
+          <label for="Telefone"><strong>Telefone: </strong></label>
+          <input type="tel" name="telefone" id="telefone" required>
+        </div>
       </div>
+
       <div>
-        <label for="Logradouro"><strong>Logradouro</strong></label>
-        <input type="text" name="logradouro" id="logradouro" required>
+        <div>
+          <label for="CEP"><strong>CEP: </strong></label>
+          <input type="number" name="cep" id="cep" required>
+        </div>
+        <div>
+          <label for="Logradouro"><strong>Logradouro: </strong></label>
+          <input type="text" name="logradouro" id="logradouro" required>
+        </div>
+        <div>
+          <label for="Número"><strong>Número: </strong></label>
+          <input type="number" name="numero" id="numero" required>
+        </div>
+        <div>
+          <label for="Bairro"><strong>Bairro: </strong></label>
+          <input type="text" name="bairro" id="bairro" required>
+        </div>
+        <div>
+          <label for="Cidade"><strong>Cidade: </strong></label>
+          <input type="text" name="cidade" id="cidade" required>
+        </div>
+        <div>
+          <label for="Estado"><strong>Estado: </strong></label>
+            <select id="estado" required>
+              <option selected disabled value="">Selecione</option>
+                <option>Acre</option> 
+                <option>Alagoas</option> 
+                <option>Amapá</option> 
+                <option>Amazonas</option> 
+                <option>Bahia</option> 
+                <option>Ceará</option> 
+                <option>Espírito Santo</option> 
+                <option>Goiás</option> 
+                <option>Maranhão</option> 
+                <option>Mato Grosso</option> 
+                <option>Mato Grosso do Sul</option> 
+                <option>Minas Gerais</option> 
+                <option>Pará</option> 
+                <option>Paraíba</option> 
+                <option>Paraná</option> 
+                <option>Pernambuco</option> 
+                <option>Piauí</option> 
+                <option>Rio de Janeiro</option> 
+                <option>Rio Grande do Norte</option> 
+                <option>Rio Grande do Sul</option> 
+                <option>Rondônia</option> 
+                <option>Roraima</option> 
+                <option>Santa Catarina</option> 
+                <option>São Paulo</option> 
+                <option>Sergipe</option> 
+                <option>Tocantins</option> 
+                <option>Distrito Federal</option> 
+            </select>
+        </div>
+        <button onclick="clicou()">Enviar</button> 
       </div>
-      <div>
-        <label for="Número"><strong>Número</strong></label>
-        <input type="number" name="numero" id="numero" required>
-      </div>
-      <div>
-        <label for="Bairro"><strong>Bairro</strong></label>
-        <input type="text" name="bairro" id="bairro" required>
-      </div>
-      <div>
-        <label for="Cidade"><strong>Cidade</strong></label>
-        <input type="text" name="cidade" id="cidade" required>
-      </div>
-      <div>
-        <label for="Estado"><strong>Estado</strong></label>
-          <select id="estado" required>
-            <option selected disabled value="">Selecione</option>
-              <option>Acre</option> 
-              <option>Alagoas</option> 
-              <option>Amapá</option> 
-              <option>Amazonas</option> 
-              <option>Bahia</option> 
-              <option>Ceará</option> 
-              <option>Espírito Santo</option> 
-              <option>Goiás</option> 
-              <option>Maranhão</option> 
-              <option>Mato Grosso</option> 
-              <option>Mato Grosso do Sul</option> 
-              <option>Minas Gerais</option> 
-              <option>Pará</option> 
-              <option>Paraíba</option> 
-              <option>Paraná</option> 
-              <option>Pernambuco</option> 
-              <option>Piauí</option> 
-              <option>Rio de Janeiro</option> 
-              <option>Rio Grande do Norte</option> 
-              <option>Rio Grande do Sul</option> 
-              <option>Rondônia</option> 
-              <option>Roraima</option> 
-              <option>Santa Catarina</option> 
-              <option>São Paulo</option> 
-              <option>Sergipe</option> 
-              <option>Tocantins</option> 
-              <option>Distrito Federal</option> 
-          </select>
-      </div>
-      <button class="botao" type="submit" onsubmit="">Enviar</button> 
-    </fieldset>
-  </form>
+    </section>
+    
+    <div> 
+      <strong id="res"></strong>
+    </div>
+  </section>
+  <script src="./script.js"></script>
 </body>
 </html>
