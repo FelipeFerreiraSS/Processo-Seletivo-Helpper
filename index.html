@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>Processo Seletivo Helpper</title>
 </head>
 <body>
@@ -11,11 +14,11 @@
     <div class="cabesalho">
       <h1>Processo Seletivo Helpper - Programa de Estágio</h1>
       <h2>Teste prático</h2>
-      <p>Complete o formulário</p>
+      <p>Complete o formulário:</p>
     </div>
 
     <section class="formulario">
-      <div>
+      
         <div>
           <label for="Nome"><strong>Nome: </strong></label>
           <input type="text" name="nome" id="nome" required>
@@ -32,9 +35,7 @@
           <label for="Telefone"><strong>Telefone: </strong></label>
           <input type="tel" name="telefone" id="telefone" required>
         </div>
-      </div>
-
-      <div>
+      
         <div>
           <label for="CEP"><strong>CEP: </strong></label>
           <input type="number" name="cep" id="cep" required>
@@ -89,11 +90,16 @@
             </select>
         </div>
         <button onclick="clicou()">Enviar</button> 
-      </div>
+      
     </section>
     
-    <div> 
-      <strong id="res"></strong>
+    <h3>Tabela completa:</h3>
+    <div id="res"> 
+      
+    </div>
+    <h3>Tabela com um e-mail excluido: </h3>
+    <div id="res2"> 
+      
     </div>
   </section>
   <script src="./script.js"></script>
